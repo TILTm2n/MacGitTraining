@@ -13,7 +13,10 @@
 		A3259F6F2746C87D00B44162 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3259F6D2746C87D00B44162 /* Main.storyboard */; };
 		A3259F712746C87D00B44162 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3259F702746C87D00B44162 /* Assets.xcassets */; };
 		A3259F742746C87D00B44162 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3259F722746C87D00B44162 /* LaunchScreen.storyboard */; };
-		A33C9DA9274D80E500028933 /* MyCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33C9DA8274D80E500028933 /* MyCustomTableViewCell.swift */; };
+		A3314ADC2755608600192F51 /* YellowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3314ADB2755608600192F51 /* YellowViewController.swift */; };
+		A3314ADF2755681800192F51 /* GreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3314ADD2755681800192F51 /* GreenViewController.swift */; };
+		A3D46D6F27564B0700CF8818 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D46D6E27564B0700CF8818 /* Button.swift */; };
+		A3D46D7127568B6800CF8818 /* UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D46D7027568B6800CF8818 /* UI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +28,10 @@
 		A3259F702746C87D00B44162 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3259F732746C87D00B44162 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3259F752746C87D00B44162 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A33C9DA8274D80E500028933 /* MyCustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomTableViewCell.swift; sourceTree = "<group>"; };
+		A3314ADB2755608600192F51 /* YellowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowViewController.swift; sourceTree = "<group>"; };
+		A3314ADD2755681800192F51 /* GreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenViewController.swift; sourceTree = "<group>"; };
+		A3D46D6E27564B0700CF8818 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		A3D46D7027568B6800CF8818 /* UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,8 @@
 				A3A8F225274D5B1E008021AC /* Controllers */,
 				A3A8F224274D5B16008021AC /* Views */,
 				A3259F752746C87D00B44162 /* Info.plist */,
+				A3D46D6E27564B0700CF8818 /* Button.swift */,
+				A3D46D7027568B6800CF8818 /* UI.swift */,
 			);
 			path = TVProj;
 			sourceTree = "<group>";
@@ -79,9 +87,10 @@
 			isa = PBXGroup;
 			children = (
 				A3259F6B2746C87D00B44162 /* ViewController.swift */,
-				A33C9DA8274D80E500028933 /* MyCustomTableViewCell.swift */,
 				A3259F692746C87D00B44162 /* SceneDelegate.swift */,
 				A3259F672746C87D00B44162 /* AppDelegate.swift */,
+				A3314ADB2755608600192F51 /* YellowViewController.swift */,
+				A3314ADD2755681800192F51 /* GreenViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -165,10 +174,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3314ADC2755608600192F51 /* YellowViewController.swift in Sources */,
+				A3D46D7127568B6800CF8818 /* UI.swift in Sources */,
 				A3259F6C2746C87D00B44162 /* ViewController.swift in Sources */,
 				A3259F682746C87D00B44162 /* AppDelegate.swift in Sources */,
-				A33C9DA9274D80E500028933 /* MyCustomTableViewCell.swift in Sources */,
 				A3259F6A2746C87D00B44162 /* SceneDelegate.swift in Sources */,
+				A3D46D6F27564B0700CF8818 /* Button.swift in Sources */,
+				A3314ADF2755681800192F51 /* GreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

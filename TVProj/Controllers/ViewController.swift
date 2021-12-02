@@ -12,10 +12,14 @@ class ViewController: UIViewController {
     private var currentIndex = 1
     var numberOfRows = 1
     
-    @IBOutlet weak var CustomTableView: UITableView!
+    
     @IBOutlet weak var CameraLine: UIView!
     @IBOutlet weak var DoorLine: UIView!
     
+    @IBAction func GoToYellow(_ sender: Any) {
+        let newVC = storyboard?.instantiateViewController(withIdentifier: "YellowViewController")
+        navigationController?.pushViewController(newVC!, animated: true)
+    }
     
     @IBAction func CameraButton(_ sender: Any) {
         if currentIndex != 1{
@@ -50,15 +54,16 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: UITableViewDataSource, UITableViewDelegate{
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return numberOfRows
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! MyCustomTableViewCell
-        
+//extension ViewController: UITableViewDataSource, UITableViewDelegate{
+//
+//
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        return numberOfRows
+//    }
+//
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! MyCustomTableViewCell
+//
 //        //mask for rounding
 //        let path1 = UIBezierPath(roundedRect:cell.myMainImage.bounds,
 //                                byRoundingCorners:[.topRight, .topLeft],
@@ -76,21 +81,22 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate{
 //
 //        cell.myMainImage.layer.mask = maskLayer1
 //        cell.titleIconView.layer.mask = maskLayer2
-        
-        cell.contentBlock.layer.cornerRadius = 20
-        
-        return cell
-    }
-    
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            tableView.deleteRows(at: [indexPath], with: .fade)
-            self.numberOfRows -= 1
-        }
-        
-        tableView.reloadData()
-    }
-
-    
-}
+//
+//        cell.contentBlock.layer.cornerRadius = 20
+//
+//        return cell
+//        return nil
+//    }
+//
+//    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+//        if editingStyle == .delete {
+//            tableView.deleteRows(at: [indexPath], with: .fade)
+//            self.numberOfRows -= 1
+//        }
+//
+//        tableView.reloadData()
+//    }
+//
+//
+//}
 
